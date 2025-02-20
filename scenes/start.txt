@@ -1,0 +1,7 @@
+-- STARTING THE SEMESTER --
+
+A new semester is beginning. How refreshing!
+You can barely wait to start helping your students learn the wonders of computational linguistics algorithms.
+You have 8 students in your list and two assignments to grade and discuss in class.
+Actually, the first batch of submissions have started to come!
+Do you want to begin grading immediately, take some free time to refuel your energy or check the list of participants?
