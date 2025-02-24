@@ -8,11 +8,14 @@ from commands import *
 class GameState:
     def __init__(self):
         self.current_scene = "start"
-        self.command_handler = command_handlers
+        self.command_handlers = command_handlers
     
     def get_command_handler(self, command):
         handlers = self.command_handlers.get(self.current_scene, {})
         return handlers.get(command, None)
+    
+    def get_current_scene(self):
+        return self.command_handlers.get(self.current_scene, {})
     
     def transition_to(self, new_scene):
         self.current_scene = new_scene

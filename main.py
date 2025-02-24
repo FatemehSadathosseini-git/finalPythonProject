@@ -13,8 +13,7 @@ def main():
     player = Player()
     
     while True:
-        scene_desc = load_scene_description(game_state.current_scene)
-        print(scene_desc)
+        print(load_scene_description(game_state.current_scene))
         
         command = input("> ").strip().lower()
         if command == "exit":
@@ -27,7 +26,7 @@ def main():
             if player.energy < 0:
                 game_state.handle_defeat()
         else:
-            print("Invalid command. Type 'help' for available commands.")
+            print(f"Invalid command: {command}. Type 'help' for available commands: {', '.join(game_state.get_current_scene().keys())}.")
 
 if __name__ == "__main__":
     main()
